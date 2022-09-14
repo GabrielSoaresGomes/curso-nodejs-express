@@ -12,4 +12,4 @@ const b = parseInt(args.b)
 
 soma(a, b)
 
-// node index.js --a=12 --b=12
+// node index.js.js --a=12 --b=12

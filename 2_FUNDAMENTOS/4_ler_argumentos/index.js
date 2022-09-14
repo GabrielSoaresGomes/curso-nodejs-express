@@ -7,4 +7,4 @@ const idade = args[1].split('=')[1]
 console.log(`Nome é ${nome} e idade é ${idade} anos.`)
 
 // Executar o arquivo passando parâmetros!
-// ex.: node index.js --nome='Gabriel' --idade=18
+// ex.: node index.js.js --nome='Gabriel' --idade=18
