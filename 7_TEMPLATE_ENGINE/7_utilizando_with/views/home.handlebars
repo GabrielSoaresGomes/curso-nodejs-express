@@ -1,0 +1,10 @@
+<h1>APENAS </h1>
+{{# if approved}}
+    <p>Parabéns, seu cadastro foi aprovado!</p>
+{{ else }}
+    <p>Sinto muito, seu ocorreu um erro ao aprovar seu cadastro!</p>
+{{/if}}
+<p>Olá {{ usuario.name }} {{ usuario.surname }}, você tem {{ usuario.age }} anos!</p>
+{{#if auth }}
+    <p>Você está logado, <a href="/dashboard/">Clique Aqui</a> para acessar seu dashboard!</p>
+{{/if}}
