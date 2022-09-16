@@ -1,0 +1,99 @@
+* {
+    font-family: Helvetica;
+    margin: 0;
+}
+
+.no-style {
+    margin: initial !important;
+    padding: initial !important;
+    color: initial !important;
+    background-color: initial !important;
+    text-align: initial !important;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #cccccc;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+#navbar ul {
+    float: left;
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+#navbar li {
+    margin: 0;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 4px;
+    font-family: "Calibri Light", serif;
+    font-weight: bolder;
+    background-color: lightgrey;
+    transition-duration: .4s;
+}
+
+#navbar a:hover {
+    background-color: #646161;
+    color: #CCC ;
+    padding: 12px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form, .books-container {
+    text-align: center;
+    width: 450px;
+    margin: 0 auto;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-control input {
+    margin: 4px 0;
+    padding: 5px;
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: 0.3em;
+}
+
+.books-container div {
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.books-container a {
+    margin: auto;
+    text-align: center;
+}
+
+#book-page {
+    padding: 2em;
+}
+
+#book-page .container {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}

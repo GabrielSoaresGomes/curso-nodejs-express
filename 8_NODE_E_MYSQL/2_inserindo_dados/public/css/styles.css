@@ -1,0 +1,29 @@
+* {
+    font-family: Helvetica;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-control input {
+    margin: 4px 0;
+    padding: 5px;
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: 0.3em;
+}
