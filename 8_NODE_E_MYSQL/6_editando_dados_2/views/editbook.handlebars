@@ -1,0 +1,15 @@
+<h1>Formulário de edição do livro {{book.title}}</h1>
+<form action="/books/updatebook" method="POST" class="form">
+    <input type="hidden" name="id" value="{{book.id}}">
+    <div class="form-control">
+        <label for="title">Título:</label>
+        <input type="text" value="{{book.title}}" placeholder="Digite aqui o título do livro" name="title" id="title">
+    </div>
+    <div class="form-control">
+        <label for="pageqty">Quantidade de Páginas:</label>
+        <input type="number" value="{{book.pageqty}}" placeholder="Digite aqui o número de páginas do livro" name="pageqty" id="pageqty">
+    </div>
+    <div class="form-control">
+        <input type="submit" value="Cadastrar">
+    </div>
+</form>

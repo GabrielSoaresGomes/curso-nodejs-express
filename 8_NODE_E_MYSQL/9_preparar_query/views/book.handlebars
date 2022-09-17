@@ -1,0 +1,21 @@
+<div id="book-page">
+    {{# if book}}
+        <div class="container">
+            <h1>{{book.title}}</h1>
+            <p>Este livro tem {{book.pageqty}} páginas!</p>
+        </div>
+        <div class="actions">
+            <a href="/books/edit/{{book.id}}" class="edit-btn action-btn">
+                Editar
+            </a>
+            <form action="/books/remove" class="book-form-edit" method="post">
+                <input type="hidden" name="id" value="{{book.id}}">
+                <input type="submit" value="Deletar" class="action-btn delete-btn">
+            </form>
+        </div>
+    {{ else}}
+        <h1>Nenhum livro encontrado</h1>
+    {{/if}}
+</div>
+
+
