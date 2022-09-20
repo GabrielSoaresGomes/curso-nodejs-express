@@ -1,0 +1,15 @@
+<h1>Tela Inicial utilizando Sequelize</h1>
+<h2>Usuários cadastrados: </h2>
+<div class="all-users">
+    {{#each users}}
+        <div class="user-card">
+            <p class="user-card-name">{{this.name}}</p>
+            <p class="user-card-occupation">{{this.occupation}}</p>
+            <p class="user-card-newsletter">Send newsletter? {{#if this.newsletter}}YES{{else}}NO{{/if}}</p>
+            <div class="actions">
+                <a href="/users/{{this.id}}">See details  </a>
+            </div>
+        </div>
+
+    {{/each}}
+</div>

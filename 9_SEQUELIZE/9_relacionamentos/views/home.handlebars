@@ -1,0 +1,19 @@
+<h1>Home page using Sequelize</h1>
+<h2>Registered Users: </h2>
+<div class="all-users">
+    {{#each users}}
+        <div class="user-card">
+            <p class="user-card-name">{{this.name}}</p>
+            <p class="user-card-occupation">{{this.occupation}}</p>
+            <p class="user-card-newsletter">Send newsletter? <span class="bold">{{#if this.newsletter}}YES{{else}}NO{{/if}}</span></p>
+            <div class="actions">
+                <a href="/users/{{this.id}}" class="action-btn view-btn">See details</a>
+                <form action="/users/delete/{{this.id}}" method="POST">
+                    <input type="submit" class="action-btn delete-btn" value="Delete">
+                </form>
+                <a href="/users/edit/{{this.id}}" class="action-btn edit-btn">Edit</a>
+            </div>
+        </div>
+
+    {{/each}}
+</div>

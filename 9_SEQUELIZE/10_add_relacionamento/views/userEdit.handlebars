@@ -1,0 +1,37 @@
+<h1>Edit User {{user.name}}</h1>
+<form action="/users/update" method="POST" class="form">
+    <input type="hidden" name="id" value="{{user.id}}">
+    <div class="form-control">
+        <label for="name">Name: </label>
+        <input type="text" value="{{user.name}}" name="name" id="name" placeholder="Insert a user name">
+    </div>
+    <div class="form-control">
+        <label for="occupation">Occupation: </label>
+        <input type="text" value="{{user.occupation}}" name="occupation" id="occupation" placeholder="Insert a user occupation">
+    </div>
+    <div class="form-control form-checkbox">
+        <input type="checkbox" name="newsletter" id="newsletter" {{#if user.newsletter}}checked{{/if}}>
+        <label for="newsletter">Send promotions?</label>
+    </div>
+    <input type="submit" value="Submit">
+</form>
+
+<div class="address-container">
+    <h2>Endereços: </h2>
+    <form action="/address/create" method="POST" class="form">
+        <input type="hidden" name="userId" value="{{user.id}}">
+        <div class="form-control">
+            <label for="street">Street: </label>
+            <input type="text" name="street" id="street" placeholder="Insert a street">
+        </div>
+        <div class="form-control">
+            <label for="number">Number: </label>
+            <input type="text" name="number" id="number" placeholder="Insert a number">
+        </div>
+        <div class="form-control">
+            <label for="city">City: </label>
+            <input type="text" name="city" id="city" placeholder="Insert a city">
+        </div>
+        <input type="submit" value="Submit a address">
+    </form>
+</div>
